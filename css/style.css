@@ -1,0 +1,118 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    background: url('../images/bg-top.svg') no-repeat top right,
+    url('../images/bg-bottom.svg') no-repeat bottom left;
+    background-color: hsl(240, 78%, 98%);
+}
+
+.toggle{
+    width:45px;
+    height: 25px;
+    background-color: hsl(237, 63%, 64%);
+    border-radius: 15px;
+    padding:3px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left:auto;
+    transform: translateX(0px);
+    transition: all 0.4s;
+}
+.monthly{
+    transform:translateX(0px);
+}
+.annually{
+    transform:translateX(-20px);
+}
+.toggle:hover {
+    background-color: hsl(236, 72%, 79%);
+}
+.toggle-box p{
+    font-size: 14px;
+    color:hsl(235, 12%, 62%);
+}
+
+.left-side, .right-side{
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.middle{
+    background-image: linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    border-radius: 15px;
+    padding: 35px 0;
+}
+h1{
+    font-size: 35px;
+}
+
+.row p{
+    padding:12px 0;
+    font-size: 14px;
+    color:hsl(233, 13%, 49%);
+}
+h6,h1{
+    color:hsl(233, 13%, 49%);
+}
+h2{
+    font-size: 50px;
+    color:hsl(232, 13%, 33%);
+}
+.middle h2, .middle p, .middle h6{
+    color:#fff;
+}
+button{
+    border:thin solid transparent;
+    width:100%;
+    outline: none;
+    padding:7px 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.middle button{
+    color:hsl(237, 63%, 64%);
+}
+.middle button:hover{
+    background-color: transparent;
+    color:#fff;
+    border-color: #fff;
+}
+.left-side button, .right-side button{
+    background-image: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    color:#fff;
+}
+.left-side button:hover, .right-side button:hover{
+    background-image: none;
+    background-color: transparent;
+    border-color: hsl(237, 63%, 64%);
+    color:hsl(237, 63%, 64%);
+}
+
+@media screen and (min-width:768px){
+    .left-side {
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .right-side {
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .container{
+        width:70%;
+    }
+
+}
